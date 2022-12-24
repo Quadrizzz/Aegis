@@ -1,0 +1,366 @@
+body{
+    margin:0;
+    padding:0;
+    background-color:#F2F2F2;
+    font-family:'Beausite Classic', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p{
+    font-family:'Beausite Classic', sans-serif;
+    margin:0;
+}
+.btn__primary{
+    cursor:pointer;
+    margin-top:24px;
+    padding:16px 8px;
+    color:#FFFFFF;
+    background:#000000;
+    border-radius:0;
+    border:none;
+}
+.form__container{
+    display:flex;
+    flex-direction:column;
+    width:400px;
+    padding-top:24px;
+    padding-top:15vh;
+}
+
+.main__navbar{
+    /* padding:10rem; */
+    display:flex;
+    padding: 1rem 0 1rem 4rem;
+    border-bottom: 1px solid #000000;
+    box-shadow: 0px 0px 12px rgba(128, 128, 128, 0.05);
+}
+.dash__sidebar{
+    height:calc(100vh - 62px - 24px);
+    width: 160px;
+    background:#000000;
+    display:flex;
+    flex-direction:column;
+    padding:24px 24px 0 24px;
+    /* color:#FFFFFF; */
+}
+.dash__sidebar span{
+    margin-top:24px;
+}
+.dash__sidebar a{
+    color:#FFFFFF;
+    text-decoration:none;
+}
+.dash__container{
+    display:flex;
+    width:100vw;
+}
+.dash__content{
+    padding-left:32px;
+    padding-top:32px;
+    width:80vw;
+    /* max-width: 1000px; */
+}
+.cards__container{
+    display:flex;
+    flex-direction:row;
+    gap:32px;
+    padding-top: 24px;
+}
+.user__card{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 16px;
+    padding:12px;
+    cursor:pointer;
+    min-width:320px;
+}
+.user__card div:nth-child(1){
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:12px;
+}
+.user__avatar{
+    /* padding:32px; */
+    background-color:black;
+    border-radius:64px;
+    width:72px;
+    height:72px;
+}
+.user__avatar + div{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+.user__avatar + div p{
+    margin:0
+}
+.btn__card{
+    background-color:#000000;
+    color:#FFFFFF;
+    font-weight:500;
+    font-family:'Beausite Classic';
+    font-size:14px;
+    padding: 8px 0 8px 0;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+.btn__card__secondary{
+    background-color:#FFFFFF;
+    color:#603CF0;
+    font-weight:500;
+    font-family:'Beausite Classic';
+    font-size:14px;
+    padding: 8px 0 8px 0;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+a{
+    color:#603CF0;
+    font-weight:500;
+    /* font-family:'Beausite Classic'; */
+    text-decoration:none;
+    font-size:14px;
+    cursor:pointer;
+}
+.questionnaire__card{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 16px;
+    padding:12px;
+    cursor:pointer;
+    min-width:320px;
+}
+
+.questionnaire__card div div:nth-child(1){
+    width:100%;
+    height:85px;
+    margin-bottom:20px;
+    border-radius:8px;
+    background:url("./qnr_img.png");
+}
+.questionnaire__card div:nth-child(1) div:nth-child(2){
+    /* background-color:red; */
+    /* height:100px; */
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+.questionnaire__card div:nth-child(2){
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    gap:12px;
+}
+.questionnaire__card div:nth-child(2) *{
+    width:-webkit-fill-available;
+}
+.questionnaire__card div:nth-child(2) button:nth-of-type(2){
+    width:88px;
+}
+
+.btn__bottom__cta{
+    cursor:pointer;
+    margin-top:24px;
+    padding:16px 8px;
+    color:#FFFFFF;
+    background:#000000;
+    border-radius:0;
+    border:none;
+    position:absolute;
+    bottom:64px;
+    right:128px;
+    width:300px;
+}
+.card__label__text{
+    color: #8C8C8C;
+}
+
+/* forms */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    padding-top:32px;
+    /* width:300px; */
+    justify-self:center;
+}
+label{
+    display:flex;
+    flex-direction:column;
+    margin-top:24px;
+    font-size:18px;
+    color:#1f1f1f;
+
+}
+input[type="submit"]{
+    width:400px;
+}
+label > input{
+    margin-top:8px;
+    padding:12px;
+    width:400px;
+    border:none;
+    border: .5px solid #ACACAC;
+    border-width:.5px;
+    border-radius:4px;
+}
+label > input::placeholder{
+    color:#CECECE;
+    font-size:16px;
+}
+select{
+    margin-top:8px;
+    padding:12px;
+    width:400px;
+    background-color:#F5F5F5;
+    border-radius:4px;
+    color:#ACACAC;
+    font-weight:500;
+    font-family:'Beausite Classic';
+    font-size:14px;
+    border-color:#ACACAC;
+}
+.dash__content__forms{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+#create__account{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    width:400px;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form input{
+    height: 50px;
+    background: transparent;
+    border: thin solid grey;
+}
+
+.form input[type="submit"]{
+    background:black;
+    color: white;
+}
+
+header{
+    padding: 3vw 3vw 3vw 3vw;
+    background-color: black;
+    color: white;
+    font-size: 3vw;
+}
+
+.form p{
+    position: relative;
+    top: 3vw;
+}
+
+.servicemain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.patients{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3vw 1vw 3vw 1vw;
+}
+
+.patient_card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: thin solid grey;
+    padding: 3vw 1vw 3vw 1vw;
+    height: 10vw;
+    margin-left: 2vw;
+    border-radius: 1vw;
+}
+
+.servicemain input[type="submit"],.servicemain p{
+    margin-left: 3vw;;
+}
+
+.servicemain input[type="submit"]{
+    background: black;
+    color: white;
+    height: 50px;
+}
+
+.userform{
+    position: relative;
+    left: 40vw;
+    display: flex;
+}
+
+.userform input{
+    height: 50px;
+    background: transparent;
+    border: thin solid grey;
+}
+
+input[type="submit"]{
+    background:black !important;
+    height: 50px !important;
+    color: white !important;
+}
+
+.admin{
+    background: black !important;
+    height: 29px !important;
+    color: white !important;
+    width: 30%;
+    text-decoration: none;
+    padding: 3vw 2vw 3vw 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vw;
+    margin-top: 5vw;
+    margin-left: 3vw;
+}
+
+.dirMain{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3vw 2vw 3vw 2vw;
+}
+
+.file{
+    border: thin solid red;
+    border-radius: 0.5vw;
+    padding: 1.5vw 2vw 1.5vw 2vw;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
